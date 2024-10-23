@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bookmark Link with JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>GeeksforGeeks</h1>
+    <h2>Using id Attribute with JavaScript</h2>
+    <p>1. Programming: 
+          <a href="#programming" 
+           onclick="liveFn('programming')">
+              Go to Programming Section
+          </a>
+      </p>
+    <p>2. Articles: 
+          <a href="#articles" 
+           onclick="liveFn('articles')">
+              Explore Articles
+          </a>
+      </p>
+    <p>2. Courses: 
+          <a href="#courses" 
+           onclick="liveFn('courses')">
+              Browse Courses
+          </a>
+      </p>
+    <section id="programming">
+        <h2>Programming Section</h2>
+        <p>
+          Welcome to the Programming section of 
+          GeeksforGeeks. Here you can find tutorials 
+          and resources related to various 
+          programming languages and technologies.
+          </p>
+    </section>
+    <section id="articles">
+        <h2>Articles</h2>
+        <p>
+          Explore a wide range of articles covering 
+          topics such as algorithms, data structures, 
+          software development, and more. Stay updated 
+          with the latest trends and insights in the 
+          tech industry.
+          </p>
+    </section>
+    <section id="courses">
+        <h2>Courses</h2>
+        <p>
+          Browse through our comprehensive collection 
+          of courses designed to enhance your skills in 
+          programming, web development, data science, 
+          and other areas. Enroll in courses to advance 
+          your knowledge.
+          </p>
+    </section>
+
+    <script>
+        function liveFn(sectionId) {
+            let section = 
+                document.getElementById(sectionId);
+            section.classList.add('highlight');
+            setTimeout(function () {
+                section.classList.remove('highlight');
+            }, 2000);
+        }
+    </script>
+</body>
+
+</html>

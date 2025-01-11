@@ -1,0 +1,17 @@
+h1, p {
+    text-align: center;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: skyblue;
+}
+
+.flex-container > div {
+    background-color: ivory;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
